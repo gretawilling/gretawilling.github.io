@@ -16,5 +16,4 @@ Lizenzhinweise:
    Copyright (c) Michal Snik
 
 5. Bilder und Videos:
-   - img/mini_logo.png: [Quelle und Lizenz angeben]
    - video/field.mp4: Pexels
