@@ -1,0 +1,20 @@
+Lizenzhinweise:
+
+1. Bootstrap (https://getbootstrap.com/)
+   Lizenz: MIT License
+   Copyright (c) 2011-2023 Twitter, Inc.
+
+2. jQuery (https://jquery.com/)
+   Lizenz: MIT License
+   Copyright JS Foundation and other contributors
+
+3. Google Fonts - Source Sans Pro (https://fonts.google.com/specimen/Source+Sans+Pro)
+   Lizenz: Open Font License (OFL)
+
+4. AOS - Animate on Scroll (https://michalsnik.github.io/aos/)
+   Lizenz: MIT License
+   Copyright (c) Michal Snik
+
+5. Bilder und Videos:
+   - img/mini_logo.png: [Quelle und Lizenz angeben]
+   - video/field.mp4: Pexels

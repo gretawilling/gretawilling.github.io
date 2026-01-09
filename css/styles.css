@@ -1,0 +1,375 @@
+/* Allgemeine Stile */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+    overflow-x: hidden;
+}
+
+a {
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+a:hover {
+    color: #29BBCC;
+    text-decoration: none;
+}
+
+/* Header */
+.tm-site-header {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 40px;
+}
+
+.tm-nav-link {
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* Navigation zentrieren */
+.tm-site-nav .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tm-site-nav .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tm-site-nav .nav-item {
+    margin: 0 15px;
+}
+
+.tm-site-nav .nav-link {
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.tm-site-nav .nav-link:hover {
+    color: #5a4636;
+}
+
+/* Video Container */
+#tm-video-container {
+    max-height: 800px;
+    height: 800px;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center top;
+}
+
+#tm-bg-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 35%;
+
+}
+
+/* Willkommen */
+.tm-welcome-container {
+    position: absolute;
+    top: 18%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.tm-title-box {
+    display: inline-block;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.tm-title-line {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* Über mich */
+#about {
+    background-color: #f5efe6;
+    color: #5a4636;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #5a4636;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #6d5c48;
+}
+
+/* Leistungen */
+#services {
+    background-color: #e7ddcc;
+    padding: 50px 20px;
+}
+
+#services h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #6d5c48;
+    text-align: center;
+}
+
+.service-card {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.service-card .card-front,
+.service-card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease;
+}
+
+.service-card .card-front {
+    background-color: #bcc6bd;
+    color: #6d5c48;
+}
+
+.service-card .card-back {
+    background-color: #f5efe6;
+    color: #6d5c48;
+    transform: rotateY(180deg);
+}
+
+.service-card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.service-card:hover .card-back {
+    transform: rotateY(0);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Kontakt */
+#contact {
+    background-color: #f5efe6;
+    color: #5a4636;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #5a4636;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #6d5c48;
+}
+
+/* Impressum */
+#impressum {
+    background-color: #6d5c48;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+
+#impressum h3 {
+    color: #f5efe6;
+    margin-bottom: 20px;
+}
+
+.impressum-left {
+    text-align: left;
+    color: #f5efe6;
+}
+
+.impressum-right {
+    text-align: right;
+    color: #f5efe6;
+}
+
+.impressum-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f5efe6;
+}
+
+.impressum-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.impressum-logo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.impressum-logo img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+#impressum a {
+    color: #b1b0ae;
+    text-decoration: none;
+}
+
+#impressum a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Animationen */
+[data-aos] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tm-site-header {
+        position: relative;
+        padding: 20px;
+    }
+
+    .tm-site-nav .navbar {
+        flex-wrap: wrap;
+    }
+
+    .tm-site-nav .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tm-site-nav .nav-item {
+        margin: 5px 0;
+    }
+
+    .tm-site-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .tm-title-line {
+        font-size: 1.8rem;
+    }
+
+    #tm-video-container {
+        max-height: 400px;
+    }
+
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .col-md-4, .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-md-6 {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .tm-site-header {
+        padding: 10px;
+    }
+
+    .tm-title-line {
+        font-size: 1.4rem;
+    }
+
+    .tm-nav-link {
+        font-size: 1rem;
+    }
+
+    #tm-video-container {
+        max-height: 300px;
+    }
+}
