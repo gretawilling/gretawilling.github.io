@@ -370,7 +370,7 @@ a:hover {
     }
 
     .impressum-logo img {
-        width: 120px;  /* Kleiner für Mobile */
+        width: 200px;  /* Kleiner für Mobile */
         height: auto;
     }
 
