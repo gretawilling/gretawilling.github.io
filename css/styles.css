@@ -302,7 +302,7 @@ a:hover {
 @media (max-width: 768px) {
     .tm-site-header {
         position: relative;
-        padding: 20px;
+        padding: 10px;
     }
 
     .tm-site-nav .navbar {
@@ -310,19 +310,20 @@ a:hover {
     }
 
    .tm-site-nav .navbar-nav {
-        flex-direction: row;
-        gap: 10px;
-        justify-content: flex-start;  
-        margin-left: -70px;           
+        flex-direction: column;  
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;  
     }
 
     .tm-site-nav .nav-item {
-        margin: 5px; 
+        margin: 0px 0;
     }
 
     .tm-site-nav .nav-link {
-        font-size: 0.75rem;
-        white-space: nowrap;   
+        font-size: 0.9rem;
+        white-space: nowrap;
     }
 
     .tm-welcome-container {
