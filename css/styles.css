@@ -266,11 +266,12 @@ a:hover {
 .impressum-logo {
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    right: 20px;
+    left: auto;
 }
 
 .impressum-logo img {
-    width: 300px;
+    width: 200px;
     height: auto;
     display: block;
 }
