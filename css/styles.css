@@ -90,7 +90,7 @@ a:hover {
 /* Willkommen */
 .tm-welcome-container {
     position: absolute;
-    top: 18%;
+    top: 20%;
     left: 66%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -271,7 +271,7 @@ a:hover {
 }
 
 .impressum-logo img {
-    width: 200px;
+    width: 300px;
     height: auto;
     display: block;
 }
