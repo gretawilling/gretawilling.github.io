@@ -309,23 +309,39 @@ a:hover {
         flex-wrap: wrap;
     }
 
-    .tm-site-nav .navbar-nav {
-        flex-direction: column;
+   .tm-site-nav .navbar-nav {
+        flex-direction: row;
         gap: 10px;
+        justify-content: flex-start;  
+        margin-left: -70px;           
     }
 
     .tm-site-nav .nav-item {
-        margin: 5px 0;
+        margin: 5px; 
     }
 
     .tm-site-nav .nav-link {
-        font-size: 1rem;
+        font-size: 0.75rem;
+        white-space: nowrap;   
+    }
+
+    .tm-welcome-container {
+        position: absolute;
+        bottom: 10px;      
+        right: 10px;      
+        left: auto;       
+        top: auto;         
+        transform: none;   
+        z-index: 10;
     }
 
     .tm-title-line {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0;
+        display: inline;
     }
-
     #tm-video-container {
         max-height: 400px;
     }
@@ -346,6 +362,23 @@ a:hover {
     p {
         font-size: 0.95rem;
     }
+     /* Impressum */
+    .impressum-logo {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .impressum-logo img {
+        width: 120px;  /* Kleiner für Mobile */
+        height: auto;
+    }
+
+    .impressum-left,
+    .impressum-right {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
     .col-md-4, .col-md-6 {
         flex: 0 0 100%;
@@ -357,20 +390,3 @@ a:hover {
     }
 }
 
-@media (max-width: 480px) {
-    .tm-site-header {
-        padding: 10px;
-    }
-
-    .tm-title-line {
-        font-size: 1.4rem;
-    }
-
-    .tm-nav-link {
-        font-size: 1rem;
-    }
-
-    #tm-video-container {
-        max-height: 300px;
-    }
-}
