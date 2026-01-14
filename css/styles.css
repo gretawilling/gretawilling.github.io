@@ -263,14 +263,30 @@ a:hover {
     line-height: 1.6;
 }
 
+.impressum-logo-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    padding-right: 0px;
+}
+
 .impressum-logo {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    left: auto;
+    position: relative;
 }
 
 .impressum-logo img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+.impressum-logo-right {
+    position: relative;
+}
+
+.impressum-logo-right img {
     width: 300px;
     height: auto;
     display: block;
@@ -363,16 +379,15 @@ a:hover {
     p {
         font-size: 0.95rem;
     }
-     /* Impressum */
-    .impressum-logo {
-        position: static;
-        text-align: center;
-        margin-top: 20px;
+
+   .impressum-logo-container {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .impressum-logo img {
-        width: 200px;  /* Kleiner für Mobile */
-        height: auto;
+    .impressum-logo img,
+    .impressum-logo-right img {
+        width: 200px;
     }
 
     .impressum-left,
