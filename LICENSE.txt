@@ -15,5 +15,5 @@ Lizenzhinweise:
    Lizenz: MIT License
    Copyright (c) Michal Snik
 
-5. Bilder und Videos:
-   - video/field.mp4: Pexels
+5. Bilder:
+   - img/field.jpg: Pixabay / Pexels
